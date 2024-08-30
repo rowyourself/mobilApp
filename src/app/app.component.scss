@@ -121,3 +121,20 @@ ion-item.selected {
 ion-item {
   --color: var(--ion-color-ourcolor);
 }
+
+/* Mostrar el menú lateral en pantallas grandes */
+@media (min-width: 992px) {
+  ion-menu-button {
+    display: none; /* Ocultar el botón de hamburguesa */
+  }
+}
+
+/* Mostrar el menú de hamburguesa en pantallas pequeñas */
+@media (max-width: 768px) {
+  ion-menu {
+    display: none; /* Ocultar el menú lateral */
+  }
+  ion-menu-button {
+    display: block; /* Mostrar el botón de hamburguesa */
+  }
+}
