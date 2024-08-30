@@ -1,0 +1,77 @@
+.ion-color-ourcolor {
+	--ion-color-base: var(--ion-color-ourcolor);
+	--ion-color-base-rgb: var(--ion-color-ourcolor-rgb);
+	--ion-color-contrast: var(--ion-color-ourcolor-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-ourcolor-contrast-rgb);
+	--ion-color-shade: var(--ion-color-ourcolor-shade);
+	--ion-color-tint: var(--ion-color-ourcolor-tint);
+}
+
+.button-icon-top {
+    display: flex;
+    flex-direction: column; /* Coloca el icono sobre el texto */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+    height: 100px; /* Puedes ajustar la altura según tus necesidades */
+    padding: 10px;
+  }
+  
+.button-icon-top ion-icon {
+    font-size: 28px; /* Tamaño del icono */
+    margin-bottom: 5px; /* Espacio entre el icono y el texto */
+  }
+  
+.button-icon-top ion-label {
+    font-size: 14px; /* Tamaño del texto */
+  }
+
+.icon-button-container {
+    display: flex;
+    flex-direction: column; /* Alinea icono y botón verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    margin: 20px; /* Margen para separación entre botones */
+    padding: 15px; /* Espacio interno para que el contenido no toque el borde */
+    border: 2px solid transparent; /* Borde inicial */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.4s, border-color 0.4s; /* Animación de escala y color del borde */
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  
+.icon-style {
+    font-size: 40px; /* Tamaño del icono */
+    margin-bottom: 10px; /* Espacio entre el icono y el botón */
+    color: var(--ion-color-ourcolor); /* Color del icono */
+  }
+  
+  ion-button {
+    width: 100%; /* Botón ancho completo */
+    max-width: 150px; /* Ancho máximo del botón */
+    text-align: center; /* Alinea el texto del botón */
+    transition: background-color 0.4s, transform 0.4s, border-color 0.4s; /* Animación de color, escala y borde más lentas */
+    border: 2px solid transparent; /* Borde inicial transparente */
+  }
+
+/* Efecto Hover */
+.icon-button-container:hover {
+    transform: scale(1.20); /* Agranda el contenedor (icono + botón) ligeramente */
+    cursor: pointer;
+  }
+  
+.icon-button-container:hover .icon-style {
+    color: var(--ion-color-ourcolor); /* Cambia el color del icono al pasar el mouse */
+    cursor: pointer;
+  }
+  
+.icon-button-container:hover ion-button {
+    transform: translateY(-5px); /* Eleva el botón ligeramente */
+    cursor: pointer;
+  }  
+  
+  .icon-button-container:hover {
+    transform: scale(1.05); /* Agranda el contenedor (icono + botón) ligeramente */
+    border-color: var(--ion-color-ourcolor); /* Cambia el color del borde al pasar el mouse */
+    cursor: pointer;
+  }  
